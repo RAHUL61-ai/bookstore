@@ -12,7 +12,7 @@ const Course = () => {
     const getBook =async()=>{
       try{
 
-        const res= await axios.get("http://localhost:4001/book");
+        const res= await axios.get("https://bookstore-app-1n7j.onrender.com");
         console.log(res.data)
         setbook(res.data)
       }catch(error){
